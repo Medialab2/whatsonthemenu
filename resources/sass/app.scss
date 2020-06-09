@@ -7,11 +7,12 @@
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
+.dashboard, .dashboard-overview__title, .dashboard-status h1 { margin-bottom: 20px;}
+
 .dashboard {
     width: 100%;
     height: 100px;
     border-bottom: gray solid 1px;
-    margin-bottom: 20px;
 
     &__title {
         font-size: 65px;
@@ -27,7 +28,6 @@
 
     &__title{
         text-align: center;
-        margin-bottom: 20px;
     }
 
     .btn{
@@ -45,7 +45,7 @@
     border-left: black solid 1px;
     height: 70vh;
 
-    .h1{
+    h1{
         margin-bottom: 20px;
     }
 
