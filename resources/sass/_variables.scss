@@ -1,33 +1,19 @@
 // Body
-$body-bg: #2E2E2E;
-$body-color: #FFFFFF;
+$body-bg: #f8fafc;
 
 // Typography
-$font-family-base: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
-$font-size-base: 1rem;
-$font-size-title: 2.5rem;
-$font-size-subtitle: 1.75rem;
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
 
-//colors
-$red: #DE0101;
-$malachite: #12D87D;
-$blue: #0031FF;
-$sunglow : #FFD136;
-
-$button-text: black;
-$button-border: #4d4d4d;
-$button-hover: #d7d8d4;
-
-body {
-    color:white
-}
-
-h1 {
-    font-size: $font-size-title;
-    color: white;
-}
-
-h2{
-    font-size: $font-size-subtitle;
-    color: white;
-}
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
