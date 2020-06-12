@@ -3,9 +3,9 @@
 @section('content')
 <div class="container-fluid">
     <div class="row dashboard">
-        <div class="col-md-10 dashboard__title">
+        <h1 class="col-md-10 dashboard__title">
             {{ Auth::user()->name }}
-        </div>
+        </h1>
         <div class="col-md-2 dashboard__button">
             <button class="btn btn-secondary btn-lg">Edit profile</button>
         </div>
@@ -16,7 +16,7 @@
         <div class="col-md-8">
             <div class="dashboard-overview">
                 <div class="dashboard-overview__title">
-                    <h1>Dashboard</h1>
+                    <h2>Dashboard</h2>
                 </div>
                 <hr>
                 <div class="dashboard-overview__buttons">
@@ -38,7 +38,8 @@
             </div> --}}
         </div>
         <div class="col-md-4 dashboard-status">
-            <h1> Status</h1>
+            <h2> Status</h2>
+            <hr>
             <div class="progress">
                 <div class="progress-bar bg-success" role="progressbar" style="width:30%">
                     Homepagina 30%
