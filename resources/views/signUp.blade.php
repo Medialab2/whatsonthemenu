@@ -38,4 +38,54 @@
             </fieldset>
         </form>
     </div>
+@section('scripts')
+    <script>
+        var current_fs, next_fs, previous_fs; //fieldsets
+        var opacity;
+        var animating; //to prevent quick multi-click glitches
+
+        $(".form-register__btn--next").click(function(){
+            if(animating) return false;
+            animating = true;
+
+            current_fs = $(this).parent();
+            next_fs = $(this).parent().next();
+
+            //activate next step on progressbar using the index of next_fs
+            $(".register__progressbar li").eq($(".form-register fieldset").index(next_fs)).addClass("register__progressbar--active");
+
+            //hide the current fieldset with style
+            current_fs.animate({}, {
+                complete: function(){
+                    current_fs.hide();
+                    animating = false;
+
+                    //Show the next fieldset
+                    next_fs.fadeIn(1000);
+                },
+            });
+        });
+
+        $(".form-register__btn--previous").click(function(){
+            if(animating) return false;
+            animating = true;
+
+            current_fs = $(this).parent();
+            previous_fs = $(this).parent().prev();
+
+            //de-activate current step on progressbar
+            $(".register__progressbar li").eq($(".form-register fieldset").index(current_fs)).removeClass("register__progressbar--active");
+
+             //hide the current fieldset with style
+             current_fs.animate({}, {
+                complete: function(){
+                    current_fs.hide();
+                    animating = false;
+
+                    //Show the next fieldset
+                    previous_fs.fadeIn(1000); 
+                },
+            });
+        });
+    </script>
 @endsection
