@@ -20,9 +20,9 @@
                 </div>
                 <hr>
                 <div class="dashboard-overview__buttons">
-                    <button class="btn btn-secondary btn-lg btn-block">Manage gerechten</button>
-                    <button class="btn btn-secondary btn-lg btn-block">Manage accesibilty</button>
-                    <button class="btn btn-secondary btn-lg btn-block">Restaurant page</button>
+                    <a class="btn btn-secondary btn-lg btn-block" href="{{ route('menu.index') }}">Manage gerechten</a>
+                    <a class="btn btn-secondary btn-lg btn-block">Manage accesibilty</a>
+                    <a class="btn btn-secondary btn-lg btn-block">Restaurant page</a>
                 </div>
             </div>
         {{--<div class="card">

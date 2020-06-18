@@ -23,6 +23,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('dashboard', 'DashboardController');
 
+Route::resource('menu', 'DrinkenController');
+
 
 
 
