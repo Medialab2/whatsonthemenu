@@ -1,10 +1,10 @@
 //--------------------- SCSS SIGN UP ---------------------//
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1rem;
-    background-color:#2E2E2E;
-    color:white;
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    background-color: $body-bg;
+    color: $body-color;
 }
 
 .register {
@@ -19,7 +19,7 @@ body {
 
     &__title {
         margin-top: 15px;
-        font-size: 2.5rem;
+        font-size: $font-size-title;
     }
 
     &__progressbar {
@@ -31,9 +31,9 @@ body {
         margin: 0 auto;
 
         &--active:before, &--active:after {
-            background: #0031FF!important;
-            color: white!important;
-            border: 0.8px solid #0031FF;
+            background: $blue!important;
+            color: $body-color!important;
+            border: 0.8px solid $blue;
         }
     }
 
@@ -51,8 +51,8 @@ body {
         height: 24px;
         line-height: 22px;
         display: block;
-        background-color:white;
-        color:black;
+        background-color: $body-color;
+        color: $button-text;
         border-radius: 25px;
         margin: 0 auto;
     }
@@ -62,7 +62,7 @@ body {
         position: absolute;
         width: 100%;
         height: 1px;
-        background-color: white;
+        background-color: $body-color;
         left: 0;
         top: 12px;
         z-index: -1; /*put it behind the numbers*/
@@ -74,7 +74,7 @@ body {
     margin: 0 auto;
 
     &__subtitle {
-        font-size: 1.75rem;
+        font-size: $font-size-subtitle;
         margin-top: 40px;
         font-weight: bold;
         text-align: center;
@@ -100,21 +100,21 @@ body {
     }
 
     &__btn {
-        border: 1px solid #4d4d4d;
+        border: 1px solid $button-border;
         border-radius: 12px;
         padding: 4px 45px;
-        background-color:white;
+        background-color: $body-color;
         margin-top: 35px;
 
         &:hover {
-            background-color:#D7D8D4;
+            background-color: $button-hover;
         }
 
         &--finish {
-            background-color:#12D87D;
+            background-color: $malachite;
 
             &:hover {
-                background-color: #118f55;
+                background-color: $button-register-hover;
             }
         }
     }
@@ -146,7 +146,7 @@ body {
         left: 0;
         height: 20px;
         width: 20px;
-        border: 1px solid white;
+        border: 1px solid $body-color;
         background-color: none;
 
         &:after {
@@ -157,7 +157,7 @@ body {
             top: 3px;
             width: 6px;
             height: 10px;
-            border: solid#fff;
+            border: solid $body-color;
             border-width: 0 3px 3px 0;
             transform: rotate(45deg);
         }
@@ -166,7 +166,7 @@ body {
 
 .form-register__checkbox input:checked ~ 
 .form-register__indicator {
-    background: blue;
+    background: $blue;
 }
 
 .form-register__checkbox input:checked ~ 
