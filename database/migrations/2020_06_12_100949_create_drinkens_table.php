@@ -16,6 +16,7 @@ class CreateDrinkensTable extends Migration
         Schema::create('drinkens', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
+            $table->integer('user_id')->unsigned();
             $table->string('name');
             $table->string('price');
             $table->text('ingredients');

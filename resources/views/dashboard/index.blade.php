@@ -20,22 +20,11 @@
                 </div>
                 <hr>
                 <div class="dashboard-overview__buttons">
-                    <button class="btn btn-secondary btn-lg btn-block">Manage gerechten</button>
-                    <button class="btn btn-secondary btn-lg btn-block">Manage accesibilty</button>
-                    <button class="btn btn-secondary btn-lg btn-block">Restaurant page</button>
+                    <a class="btn btn-secondary btn-lg btn-block" href="{{ route('menu.index') }}">Manage gerechten</a>
+                    <a class="btn btn-secondary btn-lg btn-block">Manage accesibilty</a>
+                    <a class="btn btn-secondary btn-lg btn-block">Restaurant page</a>
                 </div>
             </div>
-        {{--<div class="card">
-                <div class="card-header">Dashboard</div>
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-                    You are logged in!
-                </div>
-            </div> --}}
         </div>
         <div class="col-md-4 dashboard-status">
             <h2> Status</h2>

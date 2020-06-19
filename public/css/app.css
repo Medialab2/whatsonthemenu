@@ -10994,3 +10994,70 @@ a.text-dark:focus {
   margin-top: 100px;
 }
 
+.landingWrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.landingWrapper h1 {
+  margin-top: 3em;
+  font-size: 65px;
+  text-transform: uppercase;
+}
+
+.landingWrapper .landingSearchBarWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: calc(2em + 2rem);
+}
+
+.landingWrapper .landingSearchBarWrapper span {
+  font-size: 25px;
+}
+
+.landingWrapper .landingSearchBarWrapper .landingSearchBarInput {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.landingWrapper .landingSearchBarWrapper .landingSearchBarInput .locationButton {
+  margin-top: 1rem;
+  width: 75px;
+  height: calc(5vh + 5px);
+  border-right: 0px;
+  background: black;
+}
+
+.landingWrapper .landingSearchBarWrapper .landingSearchBarInput .locationButton i {
+  font-size: 35px;
+  color: white;
+}
+
+.landingWrapper .landingSearchBarWrapper .landingSearchBarInput input {
+  margin-top: 1rem;
+  width: 1000px;
+  height: 5vh;
+  font-size: 25px;
+  border-left: 0px;
+}
+
+.landingWrapper .landingSearchBarWrapper .landingSearchBarInput .inputButton {
+  right: 0;
+  width: 150px;
+  height: calc(5vh + 5px);
+  border-bottom-right-radius: 500px;
+  border-top-right-radius: 500px;
+  font-size: 25px;
+  margin-top: 1rem;
+  color: white;
+  background: black;
+}
+
