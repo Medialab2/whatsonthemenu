@@ -17,11 +17,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/signup', function () {
-    return view('signUp');
+Route::get('/registered', function () {
+    return view('registered');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-// Route::get('/signup', 'HomeController@index')->name('signup');
+
+//-------------- REGISTRATION FORM --------------//
+Route::get('/register', 'RegisterController@showRegister');
+Route::post('/submit', 'RegisterController@store'); 
