@@ -38,12 +38,6 @@
                         <input type="text" name="password" class="form-register__input form-control" value="">
                     </div>
                 </div>
-                <div class="form-register-group row">
-                    <label for="password-confirm" class="form-register__label col-sm-5">Bevestig wachtwoord:</label>
-                    <div class="col-sm-7">
-                        <input type="text" name="password-confirm" class="form-register__input form-control" value="">
-                    </div>
-                </div>
                 <input type="button" name="next" class="form-register__btn form-register__btn--next float-right" value="Volgende"/>
             </fieldset>
 
