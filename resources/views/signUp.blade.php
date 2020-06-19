@@ -98,6 +98,12 @@
                         <input type="text" class="form-register__input form-control" value="">
                     </div>
                 </div>
+                <div class="form-register-group row">
+                    <label for="chamber of commerce number" class="form-register__label col-sm-5">KVK nummer:</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-register__input form-control" value="">
+                    </div>
+                </div>
                 <input type="button" name="previous" class="form-register__btn form-register__btn--previous float-left" value="Vorige"/>
                 <input type="button" name="next" class="form-register__btn  form-register__btn--next float-right" value="Volgende"/>
             </fieldset>
