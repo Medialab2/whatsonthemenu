@@ -1,11 +1,17 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
 
 //SCSS
 @import 'restaurant-signup';
+
+@import "~bootstrap/scss/bootstrap";
+
+// Dashboard restaurant
+@import "restaurant-dashboard";
+
+@import "landing";

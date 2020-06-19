@@ -28,3 +28,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 //-------------- REGISTRATION FORM --------------//
 Route::get('/register', 'RegisterController@showRegister');
 Route::post('/submit', 'RegisterController@store'); 
+
+Route::resource('dashboard', 'DashboardController');
+
+Route::resource('menu', 'DrinkenController');
