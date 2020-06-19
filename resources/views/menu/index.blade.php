@@ -15,7 +15,7 @@
 </div>
 <div class="row">
     <div class="col-sm-12">
-        <h1 class="display-3">Drinken</h1>
+        <h1 class="display-3">items</h1>
 
 
         @foreach($drinken as $drinken)
@@ -24,6 +24,14 @@
                 <h5 class="card-title">Title: {{$drinken->name}}</h5>
                 <p class="card-text">Prijs: {{$drinken->price}}</p>
                 <p class="card-text">Ingerdienten: {{$drinken->ingredients}}</p>
+
+                <a href="{{ route('menu.edit',$drinken->id)}}" class="btn btn-primary">Edit</a>
+
+                <form action="{{ route('menu.destroy', $drinken->id)}}" method="post">
+                    @csrf
+                    @method('DELETE')
+                    <button class="btn btn-danger" type="submit">Delete</button>
+                  </form>
 
                 {{-- <a href="{{ route('features.show' ,$drinken->id)}}" class="btn btn-primary">Details</a> --}}
             </div>

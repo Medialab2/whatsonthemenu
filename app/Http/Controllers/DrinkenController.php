@@ -46,7 +46,41 @@ class DrinkenController extends Controller
         ]);
 
         $drinken->save();
-        return redirect('/dashboard')->with('success', 'feature added!');
+        return redirect('/menu')->with('success', 'feature added!');
     }
+
+    public function edit($id)
+    {
+        $drinken = Drinken::find($id);
+        return view('menu.edit', compact('drinken'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'name'=>'required',
+            'price'=>'required',
+            'ingredients'=>'required'
+        ]);
+
+        $drinken = Drinken::find($id);
+        $drinken->name =  $request->get('name');
+        $drinken->price = $request->get('price');
+        $drinken->ingredients = $request->get('ingredients');
+        $drinken->save();
+
+        return redirect('/menu')->with('success', 'Menu updated!');
+    }
+
+    public function destroy($id)
+    {
+        $drinken = Drinken::find($id);
+        $drinken->delete();
+
+        return redirect('/menu')->with('success', 'item deleted!');
+    
+    }
+
+
 
 }
