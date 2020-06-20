@@ -1,0 +1,12 @@
+.button-default {
+    border: 1px solid $button-border;
+    border-radius: 12px;
+    padding: 4px 45px;
+    background-color: $body-color;
+    color: $button-text;
+
+    &:hover {
+        background-color: $button-hover;
+        color: $button-text
+    }
+}

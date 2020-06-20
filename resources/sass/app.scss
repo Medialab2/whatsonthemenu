@@ -5,11 +5,11 @@
 @import "variables";
 
 // Bootstrap
+@import "~bootstrap/scss/bootstrap";
 
 //SCSS
 @import 'restaurant-signup';
-
-@import "~bootstrap/scss/bootstrap";
+@import 'restaurant-login';
 
 // Dashboard restaurant
 @import "restaurant-dashboard";
