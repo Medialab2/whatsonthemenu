@@ -2,7 +2,6 @@
 
 @section('content')
     <div class="register">
-        <form method="post" action="{{ action('RegisterController@store') }}" class="form-register">
             @csrf
             <fieldset>
                 <h2 class="form-register__subtitle">
