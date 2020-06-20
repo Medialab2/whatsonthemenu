@@ -17,15 +17,15 @@
       <form method="post" action="{{ route('menu.store') }}">
         @csrf
         <div class="form-group">
-          <label for="name">name:</label>
+          <label for="name">Product naam:</label>
           <input type="text" class="form-control" name="name" required/>
         </div>
         <div class="form-group">
-          <label for="price">price:</label>
+          <label for="price">Prijs van het product:</label>
           <input type="text" class="form-control" name="price" required/>
         </div>
         <div class="form-group">
-          <label for="ingredients">ingredients:</label>
+          <label for="ingredients">Ingredienten:</label>
           <input type="text" class="form-control" name="ingredients" required/>
         </div>
         <button type="submit" class="btn btn-primary">Add item</button>

@@ -31,4 +31,4 @@ Route::post('/submit', 'RegisterController@store');
 
 Route::resource('dashboard', 'DashboardController');
 
-Route::resource('menu', 'DrinkenController');
+Route::resource('menu', 'ItemController');
