@@ -80,6 +80,10 @@ body {
         text-align: center;
     }
 
+    .test{
+        margin-top: 30px;
+    }
+
     fieldset {
         /*stacking fieldsets above each other*/
         position: relative;
@@ -92,6 +96,10 @@ body {
 
     &-group {
         margin-top: 40px;
+
+        a {
+            margin: 0 auto;
+        }
     }
 
     &-group img {
@@ -105,9 +113,11 @@ body {
         padding: 4px 45px;
         background-color: $body-color;
         margin-top: 35px;
+        color: $button-text;
 
         &:hover {
             background-color: $button-hover;
+            color: $button-text
         }
 
         &--finish {
