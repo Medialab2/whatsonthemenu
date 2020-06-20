@@ -4,19 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 Use Illuminate\Support\Facades\Auth;
-use App\Drinken;
+use App\Item;
 
-class DrinkenController extends Controller
+class ItemController extends Controller
 {
 
-    //TODO: Add EDIT / Delete / Show ?
     //TODO: (filteren op genre)
 
     public function index()
     {
         if (Auth::check()) {
-        $drinken = Drinken::all()->where('user_id', auth()->id());
-        return view('menu.index', compact('drinken'));
+        $items = Item::all()->where('user_id', auth()->id());
+        return view('menu.index', compact('items'));
     }
     else {
         return view('auth.login');
@@ -38,21 +37,21 @@ class DrinkenController extends Controller
             'ingredients' =>'required',    
         ]);
         
-        $drinken = new Drinken([
+        $item = new Item([
             'user_id' => auth()->user()->id,
             'name' => $request->get('name'),
             'price' => $request->get('price'),
             'ingredients' => $request->get('ingredients')
         ]);
 
-        $drinken->save();
-        return redirect('/menu')->with('success', 'feature added!');
+        $item->save();
+        return redirect('/menu')->with('success', 'item added!');
     }
 
     public function edit($id)
     {
-        $drinken = Drinken::find($id);
-        return view('menu.edit', compact('drinken'));
+        $item = Item::find($id);
+        return view('menu.edit', compact('item'));
     }
 
     public function update(Request $request, $id)
@@ -63,19 +62,19 @@ class DrinkenController extends Controller
             'ingredients'=>'required'
         ]);
 
-        $drinken = Drinken::find($id);
-        $drinken->name =  $request->get('name');
-        $drinken->price = $request->get('price');
-        $drinken->ingredients = $request->get('ingredients');
-        $drinken->save();
+        $item = Item::find($id);
+        $item->name =  $request->get('name');
+        $item->price = $request->get('price');
+        $item->ingredients = $request->get('ingredients');
+        $item->save();
 
         return redirect('/menu')->with('success', 'Menu updated!');
     }
 
     public function destroy($id)
     {
-        $drinken = Drinken::find($id);
-        $drinken->delete();
+        $item = Item::find($id);
+        $item->delete();
 
         return redirect('/menu')->with('success', 'item deleted!');
     
