@@ -4,7 +4,7 @@
 <div class="container-fluid">
     <div class="row dashboard">
         <h1 class="col-md-10 dashboard__title">
-            {{ Auth::user()->name }}
+            {{ Auth::user()->restaurant_name}}
         </h1>
         <div class="col-md-2 dashboard__button">
             <button class="btn btn-secondary btn-lg">Edit profile</button>
