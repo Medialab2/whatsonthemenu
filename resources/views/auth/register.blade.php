@@ -93,7 +93,7 @@
                 <div class="form-register-group row">
                     <label for="restaurant-name" class="form-register__label col-sm-5">{{ __('Naam:') }}</label>
                     <div class="col-sm-7">
-                        <input type="text" name="restaurantname" class="form-register__input form-control" value= "{{ old('restaurant-name') }}">
+                        <input type="text" name="restaurant_name" class="form-register__input form-control" value= "{{ old('restaurant_name') }}">
                     </div>
                 </div>
                 <div class="form-register-group row">
