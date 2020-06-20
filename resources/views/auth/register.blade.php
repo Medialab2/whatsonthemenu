@@ -93,7 +93,7 @@
                 <div class="form-register-group row">
                     <label for="restaurant-name" class="form-register__label col-sm-5">{{ __('Naam:') }}</label>
                     <div class="col-sm-7">
-                        <input type="text" name="restaurant-name" class="form-register__input form-control" value= "{{ old('restaurant-name') }}">
+                        <input type="text" name="restaurantname" class="form-register__input form-control" value= "{{ old('restaurant-name') }}">
                     </div>
                 </div>
                 <div class="form-register-group row">
@@ -185,7 +185,9 @@
             <fieldset>
                 <h2 class="form-register__subtitle">Algemene voorwaarden:</h2>
 
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div style="height:250px;overflow:auto">
+                <p>Op deze pagina vindt u de algemene voorwaarden van WhatsOnTheMenu , zoals deze beschikbaar is gesteld door WhatsOnTheMenu . In deze algemene voorwaarden geven wij aan onder welk voorbehoud wij de informatie op onze website aan u aanbieden.</p><p><strong>Intellectueel eigendom </strong></p><p>Het gebruik van de informatie op deze website is gratis zolang u deze informatie niet kopieert, verspreidt of op een andere manier gebruikt of misbruikt. U mag de informatie op deze website alleen hergebruiken volgens de regelingen van het dwingend recht.</p><p>Zonder uitdrukkelijke schriftelijke toestemming van WhatsOnTheMenu is het niet toegestaan tekst, fotomateriaal of andere materialen op deze website her te gebruiken. Het intellectueel eigendom berust bij WhatsOnTheMenu.</p><p><strong>Indien van toepassing: </strong></p><p>Voor de prijzen die op onze website staan, geldt dat wij streven naar een zo zorgvuldig mogelijke weergave van de realiteit en de bedoelde prijzen. Fouten die daarbij ontstaan en herkenbaar zijn als programmeer dan wel typefouten, vormen nooit een aanleiding om een contract dan wel overeenkomst met WhatsOnTheMenu te mogen claimen of te veronderstellen.</p><p>WhatsOnTheMenu streeft naar een zo actueel mogelijke website. Mocht ondanks deze inspanningen de informatie van of de inhoud op <a href="" target="_blank"></a> onvolledig en of onjuist zijn, dan kunnen wij daarvoor geen aansprakelijkheid aanvaarden.</p><p>De informatie en/of producten op deze website worden aangeboden zonder enige vorm van garantie en of aanspraak op juistheid. Wij behouden ons het recht voor om deze materialen te wijzigen, te verwijderen of opnieuw te plaatsen zonder enige voorafgaande mededeling. WhatsOnTheMenu aanvaardt geen aansprakelijkheid voor enige informatie die op websites staat waarnaar wij via hyperlinks verwijzen.</p><p><strong>Wijzigingen </strong></p><p>Mochten deze algemene voorwaarden wijzigen, dan vindt u de meest recente versie van de disclaimer van WhatsOnTheMenu op deze pagina.</p>
+                </div>
 
                 <button type="button" name="previous" class="form-register__btn form-register__btn--previous float-left">
                     {{ __('Vorige') }}
