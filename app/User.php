@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','firstname', 'lastname', 'phonenumber', 'restaurant_name', 'address', 'postalcode', 'region', 'phonenumber-rest', 'chamber-of-commerce', 'checkbox-1', 'checkbox-2', 'checkbox-3', 'checkbox-4', 'checkbox-5'
     ];
 
     /**
@@ -36,9 +36,4 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-
-    public function drinken()
-    {
-        return $this->hasMany('Drinkens::class');
-    }
 }
