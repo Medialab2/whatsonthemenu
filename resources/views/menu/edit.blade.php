@@ -15,20 +15,20 @@
         </ul>
       </div><br />
       @endif
-      <form method="post" action="{{ route('menu.update', $drinken->id) }}">
+      <form method="post" action="{{ route('menu.update', $item->id) }}">
         @method('PATCH') 
         @csrf
         <div class="form-group">
-          <label for="name">name:</label>
-        <input type="text" class="form-control" name="name" value="{{$drinken->name}}" required/>
+          <label for="name">Naam van het product:</label>
+        <input type="text" class="form-control" name="name" value="{{$item->name}}" required/>
         </div>
         <div class="form-group">
-          <label for="price">price:</label>
-          <input type="text" class="form-control" name="price" value="{{$drinken->price}}" required/>
+          <label for="price">Prijs van het product:</label>
+          <input type="text" class="form-control" name="price" value="{{$item->price}}" required/>
         </div>
         <div class="form-group">
-          <label for="ingredients">ingredients:</label>
-          <input type="text" class="form-control" name="ingredients" value="{{$drinken->ingredients}}" required/>
+          <label for="ingredients">Ingredienten:</label>
+          <input type="text" class="form-control" name="ingredients" value="{{$item->ingredients}}" required/>
         </div>
         <button type="submit" class="btn btn-primary">update</button>
       </form>
